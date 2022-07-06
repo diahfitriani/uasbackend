@@ -1,0 +1,27 @@
+GET http://localhost:5000/siswa
+
+###
+GET http://localhost:5000/siswa/1
+
+###
+POST http://localhost:5000/siswa
+Content-Type: application/json
+
+{
+    "nama": "Bambang",
+    "kelas": "XII TKR",
+    "jeniskelamin": "Laki-Laki"
+}
+
+###
+PATCH http://localhost:5000/siswa/1
+Content-Type: application/json
+
+{
+    "nama": "Diah",
+    "kelas": "X TKJ",
+    "jeniskelamin": "Perempuan"
+}
+
+###
+DELETE http://localhost:5000/siswa/2
